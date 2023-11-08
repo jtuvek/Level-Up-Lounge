@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/Louge_DB');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/Lounge_DB');
 
 module.exports = mongoose.connection;
