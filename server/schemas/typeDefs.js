@@ -28,3 +28,5 @@ type Query {
     comment(commentId: ID!): Comment
 }
 `;
+
+module.exports = typeDefs;
