@@ -10,8 +10,8 @@ const Navbar = () => {
             <h2>Level Up Lounge</h2>
             <div className="sidebar-links">
                 <a href="/" className="home-link">Home</a>
-                <a href="/" className="forum-link">Forum</a>
-                <a href="/" className="users-link">Users</a>
+                <a href="/forum" className="forum-link">Forum</a>
+                <a href="/users" className="users-link">Users</a>
             </div>
         </nav>
     );
