@@ -27,6 +27,34 @@ body, html {
   border-right: 1px solid #f2f2f2; 
 }
 
+.navbar h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-right: 20px;
+  margin-bottom: 200px;
+}
+
+/* Navbar links */
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30%; 
+}
+
+
+.sidebar-links a {
+  text-decoration: none;
+  padding: 10px;
+  color: #c7c7c7;
+}
+
+.sidebar-links a:hover {
+  background-color: #c1003a;
+  border-radius: 10px;
+  box-shadow: #f2f2f2 0px 0px 3px;
+  font-weight: bolder;
+}
 
 /* Home */
 .home-container {
