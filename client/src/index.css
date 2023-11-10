@@ -27,30 +27,30 @@ body, html {
   border-right: 1px solid #f2f2f2; 
 }
 
-.navbar h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-right: 20px;
-  margin-bottom: 200px;
-}
 
-/* Navbar links */
-.sidebar-links {
+/* Home */
+.home-container {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 30%; 
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
-.sidebar-links a {
-  text-decoration: none;
-  padding: 10px;
-  color: #c7c7c7;
+.home {
+  text-align: center; 
+  position: relative; top: -700px;
 }
 
-.sidebar-links a:hover {
+.join-btn {
+  margin-top: 40px;
+  border-radius: 14px;
+  padding: 6px;
+}
+
+.join-btn:hover {
   background-color: #c1003a;
-  border-radius: 10px;
   box-shadow: #f2f2f2 0px 0px 3px;
   font-weight: bolder;
+  transform: scale(1.1);
+  cursor: pointer;
 }
