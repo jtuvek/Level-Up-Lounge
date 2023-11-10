@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <nav className="footer">
+        <footer className="footer">
             <h6>Level Up Lounge</h6>
             <div className="sidebar-links">
                 <a href="/" className="">Vic   </a>
@@ -8,7 +8,7 @@ const Footer = () => {
                 <a href="/" className="">Cheik   </a>
                 <a href="/" className="">C.J.   </a>
             </div>
-        </nav>
+        </footer>
     );
 };
 
