@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Header /> {/* Render the Header component */}
       <Navbar />
-      <Header />
+      <Home />
       <Footer />
        </div>
   )}
