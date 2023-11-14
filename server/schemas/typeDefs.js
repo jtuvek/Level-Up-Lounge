@@ -27,7 +27,9 @@ type Query {
 }
 
 type Mutation {
-    createComment(commentTitle: String!, commentText: String!, username: String!): Comments
+    createComment(commentTitle: String!,
+         commentText: String!,
+          username: String!): Comments
 }
 `;
 
