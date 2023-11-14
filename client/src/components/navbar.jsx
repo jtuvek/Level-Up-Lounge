@@ -11,7 +11,7 @@ const Navbar = () => {
             <div className="sidebar-links">
                 <Link to="/" className="home-link">Home</Link>
                 <Link to="/forums" className="forum-link">Forum</Link>
-                <Link to="/profile" className="users-link">Users</Link>
+                <Link to="/profile" className="users-link">Profile</Link>
             </div>
         </nav>
     );
