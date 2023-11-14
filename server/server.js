@@ -28,6 +28,16 @@ const startApolloServer = async () => {
       res.sendFile(path.join(__dirname, '../client/dist/index.html'));
     });
   }
+
+  app.post('/api/users/signup', async (req, res) => {
+    try {
+      // Handle user signup logic here
+      res.status(200).json({ message: 'User signed up successfully' });
+    } catch (error) {
+      console.error('Error during signup:', error);
+      res.status(500).json({ error: 'Failed to signup' });
+    }
+  });
   
   app.use('/graphql', expressMiddleware(server));
 

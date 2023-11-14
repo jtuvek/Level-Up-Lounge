@@ -19,11 +19,31 @@ const SignUpForm = () => {
       });
     };
   
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
       e.preventDefault();
       // Handle form submission logic here (e.g., send data to server)
       console.log('Form submitted:', formData);
+      try {
+        const response = await fetch('http://localhost:3001/api/users/signup', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+  
+        if (response.ok) {
+          // Handle successful signup
+          console.log('User signed up successfully!');
+        } else {
+          // Handle signup failure
+          console.error('Failed to signup');
+        }
+      } catch (error) {
+        console.error('Error during signup:', error);
+      }
     };
+    
   
     return (
       <form onSubmit={handleSubmit}>
