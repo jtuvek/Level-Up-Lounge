@@ -9,6 +9,7 @@ import Home from './components/Home.jsx'
 import ProfilePage from './components/pages/ProfilePage.jsx'
 import Forums from './components/pages/Forums.jsx'
 import DiscussionBoards from './components/pages/DiscussionBoards.jsx'
+import SignUpForm from './components/SignUpForm.jsx'
 
 
 
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "profile/:userId",
+        path: "profile",
         element: <ProfilePage />,
       },
       {
@@ -33,6 +34,15 @@ const router = createBrowserRouter([
         path: "discussion/:forumId",
         element: <DiscussionBoards />,
       },
+      {
+      path: "signup",
+      element: <SignUpForm />,
+      },
+      {
+        path: "login",
+        element: <SignUpForm />,
+      }
+     
       
     ],
   },
