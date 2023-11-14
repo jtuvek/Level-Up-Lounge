@@ -54,6 +54,7 @@ body, html {
 .footer-links {
   display: flex;
   justify-content: center;
+  margin: 10px;
 }
 
 .footer {
@@ -121,4 +122,23 @@ body, html {
   font-weight: bolder;
   transform: scale(1.1);
   cursor: pointer;
+}
+
+.forums-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center; 
+  position: relative; top: -400px;
+}
+
+.signupcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center; 
+  position: relative; top: -400px;
 }
