@@ -1,6 +1,4 @@
-const gql = require('apollo-server-express');
-
-const typeDefs = gql`
+const typeDefs =`
 enum Console {
     NINTENDO
     PLAYSTATION
@@ -15,7 +13,7 @@ type User {
     favConsole: [Console]
 }
 
-type Comment {
+type Comments {
     _id: ID
     commentTitle: String
     commentText: String
@@ -24,8 +22,12 @@ type Comment {
 }
 
 type Query {
-    comments: [Comment]!
-    comment(commentId: ID!): Comment
+    comments: [Comments]
+    comment(commentId: ID!): Comments
+}
+
+type Mutation {
+    createComment(commentTitle: String!, commentText: String!, username: String!): Comments
 }
 `;
 

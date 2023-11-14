@@ -1,20 +1,22 @@
-const { User, Comment } = require('../models');
+const { User, Comments } = require('../models');
 
 const resolvers = {
     Query: {
         comments: async () => {
-            return Comment.find({});
+            return await Comments.find({});
         },
         comment: async (parent, { _id }) => {
             const params = _id ? { _id } : {};
-            return Comment.find(params);
+            return await Comments.find(params);
         },
     },
     Mutation: {
         createComment: async (parent, args) => {
-            const comment = await Comment.create(args);
-            return comment;
+            const comment = await Comments.create(args);
+            return await comment;
         },
         
     },
 }
+
+module.exports = resolvers;
