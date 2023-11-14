@@ -18,12 +18,12 @@ const ProfilePage = ({ user }) => {
   );
 };
 
-ProfilePage.propTypes = {
-  user: PropTypes.shape({
-    username: PropTypes.string.isRequired,
-    email: PropTypes.string.isRequired,
-    // Add more prop types for other user details as needed
-  }).isRequired,
-};
+// ProfilePage.propTypes = {
+//   user: PropTypes.shape({
+//     username: PropTypes.string.isRequired,
+//     email: PropTypes.string.isRequired,
+//     // Add more prop types for other user details as needed
+//   }).isRequired,
+// };
 
 export default ProfilePage;

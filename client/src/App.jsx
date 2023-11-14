@@ -1,21 +1,18 @@
-import { useState } from 'react'
-import './index.css'
-import Navbar from './components/navbar.jsx'
-import Home from './components/Home.jsx'
-import Header from './components/header.jsx'; // Import the Header component
-import Footer from './components/footer.jsx'; // Import the Footer component
-import SignUpForm from './components/SignUpForm.jsx';
+import "./index.css";
+import Navbar from "./components/navbar.jsx";
+import Footer from "./components/footer.jsx";
+import Header from "./components/header.jsx";
+import { Outlet } from "react-router-dom";
 
-function App() {
-
+const App = () => {
   return (
-    <div className="App">
-      <Header /> {/* Render the Header component */}
+    <div>
       <Navbar />
-      <Home />
+      <Outlet />
       <Footer />
-      <SignUpForm />
-       </div>
-  )}
+      <Header />
+    </div>
+  );
+};
 
-export default App
+export default App;
