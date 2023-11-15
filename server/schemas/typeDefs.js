@@ -5,12 +5,17 @@ enum Console {
     XBOX
 }  
 
+type Auth {
+    token: ID
+    user: User
+}
+
 type User {
     _id: ID
     username: String
     email: String
     password: String
-    favConsole: [Console]
+    favConsole: Console
 }
 
 type Comments {
@@ -30,7 +35,9 @@ type Mutation {
     createComment(commentTitle: String!,
          commentText: String!,
           username: String!): Comments
+          addUser(firstName: String!, lastName: String!, username: String!, email: String!, password: String!, favConsole: Console!): Auth
 }
+
 `;
 
 module.exports = typeDefs;
