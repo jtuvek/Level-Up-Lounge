@@ -1,0 +1,35 @@
+/* styles.css (or your preferred file structure) */
+
+.forums-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    display: flex; /* Added to use flexbox */
+    flex-direction: column; /* Added to stack child elements vertically */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Added to ensure the container takes at least the full height of the viewport */
+    margin-bottom: 900px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+  }
+  
+  
