@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ADD_USER } from '../../utils/mutations';
+import { ADD_USER } from '../utils/mutations';
 import { useMutation } from '@apollo/client';
 
 const SignUpForm = () => {
@@ -27,7 +27,7 @@ const SignUpForm = () => {
   
       try {
         // Call the signupForm function from your API file
-    const { data } = addUser({
+    const { data } = await addUser({
       variables: { ...formData },
     });
   
