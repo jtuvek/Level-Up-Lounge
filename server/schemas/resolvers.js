@@ -15,6 +15,10 @@ const resolvers = {
             const comment = await Comments.create(args);
             return await comment;
         },
+        addUser: async (parent, args) => {
+            console.log(args);
+            return User.create(args);
+          },
         
     },
 }
