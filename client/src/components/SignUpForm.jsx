@@ -6,9 +6,9 @@ const SignUpForm = () => {
     const [formData, setFormData] = useState({
       firstName: '',
       lastName: '',
-      userName: '',
+      userName: 'jtuvek',
       email: '',
-      favConsole: '', // Updated to use a dropdown
+      favConsole: 'PLAYSTATION', // Updated to use a dropdown
       password: ''
     });
 
@@ -32,7 +32,7 @@ const SignUpForm = () => {
     });
   
         // Handle the response or update the UI as needed
-        console.log('Signup successful:', data);
+        console.log('Signup successful:', data.addUser);
       } catch (error) {
         // Handle error (display error message, log, etc.)
         console.error('Error during signup:', error);

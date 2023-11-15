@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { signupForm } from './path-to-your-api-file'; // Update with the correct path
+
 
 const SignupForm = () => {
   const [formData, setFormData] = useState({
@@ -35,16 +35,36 @@ const SignupForm = () => {
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        firstName:
-        <input type="text" name="username" value={formData.firstName} onChange={handleChange} />
+        First Name:
+        <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} />
       </label>
       <br />
       <label>
-        lastName:
-        <input type="email" name="email" value={formData.lastName} onChange={handleChange} />
+        Last Name:
+        <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} />
       </label>
       <br />
-      {/* Add other form fields as needed */}
+      <label>
+        Username:
+        <input type="text" name="userName" value={formData.userName} onChange={handleChange} />
+      </label>
+      <br />
+      <label>
+        Email:
+        <input type="email" name="email" value={formData.email} onChange={handleChange} />
+      </label>
+      <br />
+      <label>
+        Favorite Console:
+        <input type="text" name="favConsole" value={formData.favConsole} onChange={handleChange} />
+      </label>
+      <br />
+      <label>
+        Password:
+        <input type="password" name="password" value={formData.password} onChange={handleChange} />
+      </label>
+      <br />
+      
       <button type="submit">Sign Up</button>
     </form>
   );
