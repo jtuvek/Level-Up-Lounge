@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import { ADD_USER } from '../utils/mutations';
+import { useMutation } from '@apollo/client';
 
 const SignUpForm = () => {
     const [formData, setFormData] = useState({
@@ -7,9 +8,11 @@ const SignUpForm = () => {
       lastName: '',
       userName: '',
       email: '',
-      favoriteConsole: '', // Updated to use a dropdown
+      favConsole: '', // Updated to use a dropdown
       password: ''
     });
+
+    const [addUser, { error }] = useMutation(ADD_USER);
   
     const handleChange = (e) => {
       const { name, value } = e.target;
@@ -21,32 +24,23 @@ const SignUpForm = () => {
   
     const handleSubmit = async (e) => {
       e.preventDefault();
-      // Handle form submission logic here (e.g., send data to server)
-      console.log('Form submitted:', formData);
-      try {
-        const response = await fetch('http://localhost:3001/api/users/signup', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(formData),
-        });
   
-        if (response.ok) {
-          // Handle successful signup
-          console.log('User signed up successfully!');
-        } else {
-          // Handle signup failure
-          console.error('Failed to signup');
-        }
+      try {
+        // Call the signupForm function from your API file
+    const { data } = await addUser({
+      variables: { ...formData },
+    });
+  
+        // Handle the response or update the UI as needed
+        console.log('Signup successful:', data);
       } catch (error) {
+        // Handle error (display error message, log, etc.)
         console.error('Error during signup:', error);
       }
     };
-    
   
     return (
-      <form onSubmit={handleSubmit}>
+      <form className="signupcontainer" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="firstName">First Name:</label>
           <input

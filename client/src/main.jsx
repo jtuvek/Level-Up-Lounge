@@ -12,6 +12,11 @@ import Forums from './components/pages/Forums.jsx'
 
 
 
+import SignUpForm from './components/SignUpForm.jsx'
+
+
+
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -22,13 +27,26 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "profile/:userId",
+        path: "profile",
         element: <ProfilePage />,
       },
       {
         path: "forum",
         element: <Forums />,
       },
+
+
+  
+      {
+      path: "signup",
+      element: <SignUpForm />,
+      },
+      {
+        path: "login",
+        element: <SignUpForm />,
+      }
+     
+
       
     ],
   },

@@ -17,7 +17,7 @@ const userSchema = new Schema({
         type: String,
         required: true,
     },
-    favoriteConsole: {
+    favConsole: {
         type: String,
         required: true,
     },

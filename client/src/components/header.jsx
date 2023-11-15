@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <div className="header">
             <h1></h1>
             <div className="header-links-container">
-                <a href="/" className="login-link">Login</a>
-                <a href="/" className="signup-link">SignUp</a>
+                <Link to="/login" className="login-link">Login</Link>
+                <Link to="/signup" className="signup-link">SignUp</Link>
             </div>
         </div>
     );

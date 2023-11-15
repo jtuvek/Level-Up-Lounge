@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -9,9 +9,9 @@ const Navbar = () => {
         <nav className="navbar">
             <h2>Level Up Lounge</h2>
             <div className="sidebar-links">
-                <a href="/" className="home-link">Home</a>
-                <a href="/forum" className="forum-link">Forum</a>
-                <a href="/users" className="users-link">Users</a>
+                <Link to="/" className="home-link">Home</Link>
+                <Link to="/forums" className="forum-link">Forum</Link>
+                <Link to="/profile" className="users-link">Profile</Link>
             </div>
         </nav>
     );
