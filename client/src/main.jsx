@@ -4,12 +4,16 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './index.css'
+import './components/pages/forums.css'
 import App from './App.jsx'
 import Home from './components/Home.jsx'
 import ProfilePage from './components/pages/ProfilePage.jsx'
 import Forums from './components/pages/Forums.jsx'
-import DiscussionBoards from './components/pages/DiscussionBoards.jsx'
+
+
+
 import SignUpForm from './components/SignUpForm.jsx'
+
 
 
 
@@ -27,13 +31,12 @@ const router = createBrowserRouter([
         element: <ProfilePage />,
       },
       {
-        path: "forums",
+        path: "forum",
         element: <Forums />,
       },
-      {
-        path: "discussion/:forumId",
-        element: <DiscussionBoards />,
-      },
+
+
+  
       {
       path: "signup",
       element: <SignUpForm />,
@@ -43,6 +46,7 @@ const router = createBrowserRouter([
         element: <SignUpForm />,
       }
      
+
       
     ],
   },

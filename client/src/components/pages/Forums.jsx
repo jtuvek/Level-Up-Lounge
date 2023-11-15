@@ -20,7 +20,7 @@ const Forums = () => {
 
   return (
     <div className="forums-container">
-      <h2>Forums</h2>
+      <h2 className='forumTitle'>Forums</h2>
       <ul>
         {forums.map((forum) => (
           <li key={forum.id}>
