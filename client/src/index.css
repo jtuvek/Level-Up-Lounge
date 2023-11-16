@@ -58,6 +58,22 @@ body, html {
   margin: 10px;
 }
 
+.vicfoot {
+  margin: 10px;
+}
+
+.josiahfoot {
+  margin: 10px;
+}
+
+.cjfoot {
+  margin: 10px;
+}
+
+.cheikfoot {
+  margin: 10px;
+}
+
 .footer {
   .footer {
     position: fixed;
@@ -109,7 +125,7 @@ body, html {
 
 .home {
   text-align: center; 
-  position: relative; top: -700px;
+  position: relative; top: -400px;
 }
 
 .join-btn {
@@ -136,6 +152,16 @@ body, html {
 }
 
 .signupcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center; 
+  position: relative; top: -400px;
+}
+
+.loginContainer {
   display: flex;
   flex-direction: column;
   align-items: center;

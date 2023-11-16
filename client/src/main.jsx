@@ -7,6 +7,7 @@ import Home from './components/Home.jsx'
 import ProfilePage from './components/pages/ProfilePage.jsx'
 import Forums from './components/pages/Forums.jsx'
 import SignUpForm from './components/SignUpForm.jsx'
+import LoginForm from './components/LoginForm.jsx';
 
 
 const router = createBrowserRouter([
@@ -35,7 +36,7 @@ const router = createBrowserRouter([
       },
       {
         path: "login",
-        element: <SignUpForm />,
+        element: <LoginForm />,
       }
      
 
