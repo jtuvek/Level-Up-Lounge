@@ -1,8 +1,9 @@
-# React + Vite
+Level-Up-Lounge
+Created by Victor Nieves, Josiah Tuvek, Charles Mendenhall, Cheik Bagagnan.
+MERN Stack single-page web application using React and MongoDB.
+![Level-Up-Lounge-Screenshot](image.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Technologies Used: Node, Vite, ApolloClient, React, React Router Dom, GraphQL, Express, Mongoose
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+GitHub Repo:
+https://github.com/jtuvek/Level-Up-Lounge
