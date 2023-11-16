@@ -37,7 +37,7 @@ const LoginForm = () => {
   return (
     <form className="loginContainer" onSubmit={handleSubmit}>
       <div>
-        <label htmlFor="email">Email:</label>
+        <label className='email-header' htmlFor="email">Email:</label>
         <input
           type="email"
           id="email"
@@ -45,11 +45,12 @@ const LoginForm = () => {
           value={formData.email}
           onChange={handleChange}
           required
+          className="email-input custom-input"
         />
       </div>
 
       <div>
-        <label htmlFor="password">Password:</label>
+        <label className='password-header' htmlFor="password">Password:</label>
         <input
           type="password"
           id="password"
@@ -57,10 +58,11 @@ const LoginForm = () => {
           value={formData.password}
           onChange={handleChange}
           required
+          className="password-input custom-input"
         />
       </div>
 
-      <button type="submit">Login</button>
+      <button className='login-form-button' type="submit">Login</button>
     </form>
   );
 };

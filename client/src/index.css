@@ -69,12 +69,65 @@ h1 {
   position: relative; top: -400px;
 }
 
-.loginContainer {
+/* .loginContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
   text-align: center; 
-  position: relative; top: -400px;
+  position: relative; top: -780px;
+} */
+
+.loginContainer {
+  max-width: 400px;
+  margin: auto;
+  position: relative;
+  top: -864px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-header,
+.password-header {
+  font-size: 1.5rem;
+}
+
+
+.email-input {
+  width: 100%; /* Set both email and password inputs to 100% width */
+  box-sizing: border-box;
+  margin-bottom: 36px;
+  padding: 26px;
+  color: rgb(230, 230, 230);
+  background-color: black;
+}
+
+.password-input {
+  width: 87%;
+  box-sizing: border-box;
+  margin-bottom: 36px;
+  padding: 26px;
+  background-color: black;
+}
+
+.login-form-button {
+  width: 140px;
+  box-sizing: border-box;
+  padding: 16px;
+  font-size: 20px;
+  color: white;
+  background-color: #181a1c;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: #f2f2f2 0px 0px 3px;
+}
+
+.login-form-button:hover {
+  color: #c1003a;
+  box-shadow: #c1003a 0px 0px 3px;
 }
