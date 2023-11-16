@@ -1,4 +1,5 @@
 import "./index.css";
+import "./components/layout/layout.css"
 import Navbar from "./components/navbar.jsx";
 import Footer from "./components/footer.jsx";
 import Header from "./components/header.jsx";
