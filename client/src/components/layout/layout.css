@@ -96,6 +96,6 @@
 .footer-links a:hover {
     color: #c1003a;
     font-weight: bolder;
-    font-size: larger;
+    text-shadow: #f2f2f2 0px 0px 40px;
 }
 
