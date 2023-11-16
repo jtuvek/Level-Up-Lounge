@@ -6,9 +6,9 @@ const SignUpForm = () => {
     const [formData, setFormData] = useState({
       firstName: '',
       lastName: '',
-      userName: 'jtuvek',
+      userName: '',
       email: '',
-      favConsole: 'PLAYSTATION', // Updated to use a dropdown
+      favConsole: '', // Updated to use a dropdown
       password: ''
     });
 

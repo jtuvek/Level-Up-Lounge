@@ -12,13 +12,13 @@ const users = [
     username: 'user1',
     email: 'user1@example.com',
     password: 'password1',
-    favoriteConsole: 'PlayStation',
+    favConsole: 'PlayStation',
   },
   {
     username: 'user2',
     email: 'user2@example.com',
     password: 'password2',
-    favoriteConsole: 'Xbox',
+    favConsole: 'Xbox',
   },
 ];
 
