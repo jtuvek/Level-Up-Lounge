@@ -38,6 +38,18 @@ const startApolloServer = async () => {
       res.status(500).json({ error: 'Failed to signup' });
     }
   });
+
+  // Forum route (placeholder, adapt as needed)
+  app.get('./components/pages/Forums', (req, res) => {
+    // Retrieve forums data and send it as a response
+    const dummyForums = [
+      { id: 1, name: 'General Discussion' },
+      { id: 2, name: 'Game Reviews' },
+      { id: 3, name: 'Technical Support' },
+      // Add more forums as needed
+    ];
+    res.json(dummyForums);
+  });
   
   app.use('/graphql', expressMiddleware(server));
 
