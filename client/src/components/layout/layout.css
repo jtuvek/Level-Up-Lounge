@@ -9,16 +9,22 @@
     display: flex;
     justify-content: flex-end;
     margin-right: 50px;
+    font-size: 1.2rem;
+    margin-left: 30px;
+    margin-top: 16px;
+    gap: 20px;
   }
   
-  .login-link {
-    margin: 10px;
+  .header-links-container a {
+    text-decoration: none;
+    color: #c7c7c7;
   }
-  
-  .signup-link {
-    margin: 10px;
+
+  .header-links-container a:hover {
+    color: #c1003a;
+    font-weight: bolder;
   }
-  
+
   /* Navbar on the left side of page */
 .navbar {
     padding: 20px;
@@ -65,7 +71,9 @@
     width: 100%;
     background-color: rgb(8, 8, 8);
     padding: 12px;
-    margin-bottom: 650px;
+    /* margin-bottom: 650px; */
+    position: fixed;
+    bottom: 0;
 }
 
 .footer-links {
