@@ -27,43 +27,49 @@
 
   /* Navbar on the left side of page */
 .navbar {
-    padding: 20px;
+    padding: 6px;
     display: flex;
     flex-direction: column; 
     align-items: flex-start; 
+    background-color: rgb(255, 255, 255);
     max-width: 100px; 
     height: 100vh; 
     margin: 0;
-    border-right: 1px solid #f2f2f2;
+    border-right: 2px solid #e0e0e0;
     margin-top: 20px;
   }
 
-  .navbar h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-right: 20px;
-    margin-bottom: 200px;
+  .site-logo {
+    width: 190px;
+    position: absolute;
+    top: 0px;
+    left: -40px;
   }
   
   .sidebar-links {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 30%; 
+    justify-content: center;
+    align-items: center;
+    gap: 82px;
+    height: 80%; 
+    font-size: 1.9rem;
+    margin-left: 16px;
   }
   
   
   .sidebar-links a {
     text-decoration: none;
     padding: 10px;
-    color: #c7c7c7;
+    color: grey;
   }
   
   .sidebar-links a:hover {
-    background-color: #c1003a;
+    color: #cc1a29;
     border-radius: 10px;
-    box-shadow: #f2f2f2 0px 0px 3px;
-    font-weight: bolder;
+    /* box-shadow: #f2f2f2 0px 0px 8px; */
+    /* cursor: crosshair; */
+    
   }
 
   /* Footer Section */
