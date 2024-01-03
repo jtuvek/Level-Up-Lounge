@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 const Home = () => {
 
     return (  
+    <div>
         <div className="home-container">
             <div className="home">
                 <h1>Welcome to Level Up Lounge!</h1>
@@ -12,8 +13,8 @@ const Home = () => {
                 </Link>
             </div>
         </div>
+    </div>
     );
-
 }
 
 export default Home;
