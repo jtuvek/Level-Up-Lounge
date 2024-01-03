@@ -5,16 +5,17 @@
   font-family: "Quicksand";
   /* background-color: rgb(40, 40, 40);
   color: rgb(182, 182, 182); */
-  /* overflow: hidden; */
 }
 
 body, html {
   /* color:  rgb(182, 182, 182); */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   height: 100%;
   margin: 0;
   padding: 0;
   /* height: 100vh; */
-  /* overflow: hidden; */
 }
 
 h1 {
@@ -35,6 +36,7 @@ h1 {
 .home {
   text-align: center; 
   position: relative; top: -500px;
+  color: rgb(75, 75, 75);
 }
 
 .join-btn {
@@ -58,6 +60,9 @@ h1 {
   cursor: pointer;
 }
 
+
+
+/* forums */
 .forums-container {
   display: flex;
   align-items: center;
