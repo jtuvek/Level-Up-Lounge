@@ -120,30 +120,52 @@
     background-color: #c1003a;
   }
 
-  /* Hamburger Menu */
-  .hamburger-menu {
+  /* Ghost icon */
+  .ghost-icon {
     cursor: pointer;
     position: relative;
     left: 100px;
-    font-size: 2rem;
+    font-size: 2.2rem;
+    color: rgb(0, 72, 255);
   }
   
   
   /* Navbar on the left side of page */
-.navbar {
+.navbar.expanded {
     padding: 6px;
     display: flex;
     flex-direction: column; 
     align-items: flex-start; 
     background-color: rgb(255, 255, 255);
-    max-width: 100px; 
-    height: 100vh; 
+    width: 100px; 
+    height: 52vh; 
     margin: 0;
     border-right: 2px solid #e0e0e0;
-    margin-top: 20px;
-
+    border-top: 2px solid #e0e0e0;
+    border-bottom: 2px solid #e0e0e0;
+    margin-top: 198px;
     position: sticky;
     top: 20px;
+    left: 0px;
+    z-index: 100;
+  }
+
+  .navbar.collapsed {
+    padding: 2px;
+    flex-direction: column; 
+    align-items: flex-start; 
+    background-color: rgb(255, 255, 255);
+    width: 60px; 
+    height: 52vh; 
+    margin: 0;
+    border-right: 2px solid #e0e0e0;
+    border-top: 2px solid #e0e0e0;
+    border-bottom: 2px solid #e0e0e0;
+    margin-top: 198px;
+    position: sticky;
+    top: 20px;
+    left: 0px;
+    z-index: 100;
   }
 
   .sidebar-links {
@@ -155,6 +177,12 @@
     height: 80%; 
     font-size: 1.9rem;
     margin-left: 16px;
+    transition: max-width 0.5s ease, margin-left 0.5s ease;
+  }
+
+  .sidebar-links.collapsed {
+    margin-left: 2px;
+    transition: width 9s ease, margin-left 0.5s ease;
   }
   
   
