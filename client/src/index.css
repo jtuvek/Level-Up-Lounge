@@ -24,19 +24,16 @@ h1 {
 }
 
 /* Home */
-.home-container {
+/* .home {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50vh;
-  position: relative;
-  top: -340px; 
-}
-
-.home {
   text-align: center; 
+  justify-content: center;
   position: relative; top: -500px;
   color: rgb(75, 75, 75);
+  border: 1px solid rgb(230, 6, 6);
+  padding: 64px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .join-btn {
@@ -58,8 +55,39 @@ h1 {
   font-weight: bolder;
   transform: scale(1.1);
   cursor: pointer;
+} */
+
+.home {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  position: relative; top: -400px;
+  color: rgb(75, 75, 75);
+  padding: 64px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
+.join-btn {
+  background-color: rgb(87, 117, 252);
+  border-radius: 14px;
+  padding: 12px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: white;
+  margin-top: 20px; /* Adjusted margin-top to create space below h1 */
+  box-shadow: rgb(0, 72, 255) 0px 0px 3px;
+  border: 1px solid rgb(0, 72, 255);
+  transition: all 0.2s ease-in-out;
+}
+
+.join-btn:hover {
+  background-color: rgb(87, 117, 252);
+  box-shadow: #f2f2f2 0px 0px 3px;
+  font-weight: bolder;
+  transform: scale(1.1);
+  cursor: pointer;
+}
 
 
 /* forums */

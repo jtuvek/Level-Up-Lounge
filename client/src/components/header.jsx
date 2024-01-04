@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import siteLogo from "../assets/siteLogo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faGhost } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   const [query, setQuery] = useState("");
@@ -54,8 +54,8 @@ const Header = () => {
               <li key={index}>{suggestion}</li>
             ))}
           </ul>
-          <div className="hamburger-menu">
-          <FontAwesomeIcon icon={faBars} />
+          <div className="ghost-icon">
+          <FontAwesomeIcon icon={faGhost} />
         </div>
         </div>
       </div>
