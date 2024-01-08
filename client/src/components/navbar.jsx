@@ -24,9 +24,9 @@ const Navbar = () => {
     <div className={`sidebar-links ${isSidebarExpanded ? 'expanded' : 'collapsed'}`}>
       {/* Add an icon or button to toggle the sidebar */}
       <div className="toggle-icon" onClick={toggleSidebar}>
-        <FontAwesomeIcon icon={isSidebarExpanded ? faChevronLeft : faChevronRight} />
+        <FontAwesomeIcon className='chevron-icon' icon={isSidebarExpanded ? faChevronLeft : faChevronRight} />
       </div>
-
+        
       {/* Links */}
       <Link
         to="/"
@@ -35,6 +35,7 @@ const Navbar = () => {
         onMouseLeave={handleMouseLeave}
       >
         <FontAwesomeIcon icon={faHome} />
+        {isSidebarExpanded && <span className="text-container">HOME</span>}
       </Link>
       <Link
         to="/forums"
@@ -43,6 +44,7 @@ const Navbar = () => {
         onMouseLeave={handleMouseLeave}
       >
         <FontAwesomeIcon icon={faGamepad} />
+        {isSidebarExpanded && <span className="text-container">FORUM</span>}
       </Link>
       <Link
         to="/profile"
@@ -51,6 +53,7 @@ const Navbar = () => {
         onMouseLeave={handleMouseLeave}
       >
         <FontAwesomeIcon icon={faUser} />
+        {isSidebarExpanded && <span className="text-container">PROFILE</span>}
       </Link>
     </div>
   </nav>
