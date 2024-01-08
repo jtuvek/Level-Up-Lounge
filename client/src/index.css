@@ -82,7 +82,7 @@ h1 {
 }
 
 .join-btn:hover {
-  background-color: rgb(87, 117, 252);
+  background-color: rgb(47, 85, 252);
   box-shadow: #f2f2f2 0px 0px 3px;
   font-weight: bolder;
   transform: scale(1.1);
