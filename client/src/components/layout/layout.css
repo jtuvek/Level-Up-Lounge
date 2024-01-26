@@ -9,6 +9,9 @@
     justify-content: space-between;
     align-items: center;
     background-color: #fff; /* Adjust as needed */
+    /* background-color: #a0adff; */
+    /* background-color: rgb(168, 168, 168); */
+    /* opacity: 0.9; */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   }
   
@@ -117,7 +120,7 @@
   }
   
   .search-btn:hover {
-    background-color: #c1003a;
+    background-color: #c9013d;
   }
 
   /* Ghost icon */

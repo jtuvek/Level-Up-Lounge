@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import { LOGIN_USER } from '../utils/mutations';
-import { useMutation } from '@apollo/client';
+import React, { useState } from "react";
+import { LOGIN_USER } from "../utils/mutations";
+import { useMutation } from "@apollo/client";
 
 const LoginForm = () => {
   const [formData, setFormData] = useState({
-    email: '',
-    password: ''
+    email: "",
+    password: "",
   });
 
   const [loginUser, { error }] = useMutation(LOGIN_USER);
@@ -14,7 +14,7 @@ const LoginForm = () => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: value
+      [name]: value,
     });
   };
 
@@ -27,17 +27,19 @@ const LoginForm = () => {
       });
 
       // Handle the response or update the UI as needed
-      console.log('Login successful:', data.loginUser);
+      console.log("Login successful:", data.loginUser);
     } catch (error) {
       // Handle error (display error message, log, etc.)
-      console.error('Error during login:', error);
+      console.error("Error during login:", error);
     }
   };
 
   return (
     <form className="loginContainer" onSubmit={handleSubmit}>
       <div>
-        <label className='email-header' htmlFor="email">Email:</label>
+        <label className="email-header" htmlFor="email">
+          Email:
+        </label>
         <input
           type="email"
           id="email"
@@ -50,7 +52,9 @@ const LoginForm = () => {
       </div>
 
       <div>
-        <label className='password-header' htmlFor="password">Password:</label>
+        <label className="password-header" htmlFor="password">
+          Password:
+        </label>
         <input
           type="password"
           id="password"
@@ -62,7 +66,9 @@ const LoginForm = () => {
         />
       </div>
 
-      <button className='login-form-button' type="submit">Login</button>
+      <button className="login-form-button" type="submit">
+        Login
+      </button>
     </form>
   );
 };

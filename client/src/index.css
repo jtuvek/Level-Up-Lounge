@@ -164,16 +164,21 @@ h1 {
 
 /* Login Form */
 .loginContainer {
-  max-width: 400px;
+  max-width: 328px;
   margin: auto;
-  position: relative;
-  top: -600px;
+  position: relative; 
+  top: -400px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  background-color: rgba(26, 97, 190, 0.8);
+  padding: 30px 0px 32px;
+  border: 1px solid rgb(50, 126, 224);
+  border-radius: 20px;
+  box-shadow: 0 0 8px 4px #00f;
+  animation: glow 1.5s infinite alternate;
 }
 
 .email-header,
@@ -186,7 +191,7 @@ h1 {
   width: 100%; /* Set both email and password inputs to 100% width */
   box-sizing: border-box;
   margin-bottom: 36px;
-  padding: 26px;
+  padding: 16px;
   color: rgb(230, 230, 230);
   background-color: black;
 }
@@ -195,7 +200,7 @@ h1 {
   width: 87%;
   box-sizing: border-box;
   margin-bottom: 36px;
-  padding: 26px;
+  padding: 16px;
   background-color: black;
 }
 
@@ -208,11 +213,16 @@ h1 {
   background-color: #181a1c;
   border: none;
   cursor: pointer;
+  border: 0.5px solid #00f;
   border-radius: 20px;
   box-shadow: #f2f2f2 0px 0px 3px;
 }
 
 .login-form-button:hover {
-  color: #c1003a;
-  box-shadow: #c1003a 0px 0px 3px;
+  color: #e4e4e4;
+  font-weight: 600;
+  background-color: rgb(163, 0, 0);
+  border: 0.1px solid rgb(15, 14, 14);
 }
+
+

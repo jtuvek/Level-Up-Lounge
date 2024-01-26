@@ -25,7 +25,7 @@ const Header = () => {
       <div className="header-links-container">
         <Link to="/">
           <img
-            onClick={() => {}}
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth"})}
             src={siteLogo}
             alt="website logo"
             className="site-logo"
