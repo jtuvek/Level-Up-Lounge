@@ -1,21 +1,23 @@
 import React from 'react';
 
-const ProfilePage = ({ user }) => {
+// const ProfilePage = ({ user }) => {
+  const ProfilePage = () => {
   return (
     <div className="profile-container">
       <div className="profile">
         <h2>Profile Page</h2>
         <div>
-          <strong>Username:</strong> {user.username}
+          {/* <strong>Username:</strong> {user.username} */}
         </div>
         <div>
-          <strong>Email:</strong> {user.email}
+          {/* <strong>Email:</strong> {user.email} */}
         </div>
         {/* Add more user details as needed */}
       </div>
     </div>
   );
 };
+// };
 
 // ProfilePage.propTypes = {
 //   user: PropTypes.shape({

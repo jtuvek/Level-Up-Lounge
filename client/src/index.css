@@ -11,10 +11,11 @@ body, html {
   /* color:  rgb(182, 182, 182); */
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   height: 100%;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   /* height: 100vh; */
 }
 
@@ -26,13 +27,16 @@ h1 {
 /* Home */
 .home {
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
-  position: relative; top: -400px;
+  flex-direction: column; 
+  align-items: center; 
+  position: relative; 
+  bottom: -264px;
+  height: 85vh;
   color: rgb(75, 75, 75);
   padding: 64px;
   max-width: 800px;
   margin: 0 auto;
+  /* z-index: -2; */
 }
 
 .join-btn {
@@ -59,13 +63,14 @@ h1 {
 /* kratos large image */
 .why-join-section {
   text-align: center;
+  color: rgb(75, 75, 75);
   display: flex;
   flex-direction: column;
+  position: relative;
   align-items: center;
   max-width: 1100px; 
   margin: 0 auto; 
   padding: 0px; 
-  z-index: 0;
 }
 
 .why-join-section h2 {
@@ -139,6 +144,14 @@ h1 {
 }
 
 /* forums */
+.login-heading {
+  color: rgb(0, 0, 0);
+  position: absolute;
+  text-align: center;
+  top: 20vh;
+  width: 100%;
+}
+
 .forums-container {
   display: flex;
   align-items: center;
@@ -148,26 +161,13 @@ h1 {
   position: relative; top: -400px;
 }
 
-.signupcontainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  text-align: center; 
-  position: relative; top: -400px;
-}
-
-
-
-
-
 /* Login Form */
 .loginContainer {
   max-width: 328px;
   margin: auto;
   position: relative; 
-  top: -400px;
+  top: 260px;
+  height: 35vh;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -186,7 +186,6 @@ h1 {
   font-size: 1.5rem;
 }
 
-
 .email-input {
   width: 100%; /* Set both email and password inputs to 100% width */
   box-sizing: border-box;
@@ -201,6 +200,7 @@ h1 {
   box-sizing: border-box;
   margin-bottom: 36px;
   padding: 16px;
+  color: rgb(230, 230, 230);
   background-color: black;
 }
 
@@ -225,4 +225,113 @@ h1 {
   border: 0.1px solid rgb(15, 14, 14);
 }
 
+/* Sign Up Form */
+.sign-up-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 110vh;
+}
 
+.sign-up-heading {
+  color: rgb(0, 0, 0);
+  position: absolute;
+  text-align: center;
+  top: 20vh;
+  width: 100%;
+}
+
+.form-wrapper {
+  background-color: rgba(26, 97, 190, 0.8);
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  border-radius: 12px;
+  border: 1px solid rgb(50, 126, 224);
+  border-radius: 20px;
+  box-shadow: 0 0 8px 4px #00f;
+  animation: glow 1.5s infinite alternate;
+}
+
+.form-wrapper input {
+  /* width: 16vw; */
+  width: auto;
+  padding: 8px;
+  margin: 4px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1.2rem;
+}
+
+.form-wrapper input:focus {
+  outline-color:rgb(73, 132, 241);
+}
+
+label {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+
+/* Dropdown section styling */
+.select-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px; 
+  margin-top: 10px;
+}
+
+.custom-select-wrapper {
+  position: relative;
+}
+
+.pixel-sword {
+  width: 52px;
+  height: auto;
+  
+}
+
+.favorite-console {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.custom-select {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 50px;
+}
+
+.custom-select::-ms-expand {
+  display: none; 
+}
+
+/* Sign up Button*/
+.sign-up-btn {
+  width: 140px;
+  margin: 32px auto 0;
+  margin-top: 12px;
+  box-sizing: border-box;
+  padding: 16px;
+  font-size: 20px;
+  color: white;
+  background-color: #181a1c;
+  border: none;
+  cursor: pointer;
+  border: 0.5px solid #00f;
+  border-radius: 20px;
+  box-shadow: #f2f2f2 0px 0px 3px;
+}
+
+.sign-up-btn:hover {
+  color: #e4e4e4;
+  font-weight: 600;
+  background-color: rgb(163, 0, 0);
+  border: 0.1px solid rgb(15, 14, 14);
+}

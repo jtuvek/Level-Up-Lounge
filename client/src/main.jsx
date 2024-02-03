@@ -24,7 +24,7 @@ const router = createBrowserRouter([
         element: <ProfilePage />,
       },
       {
-        path: "forum",
+        path: "forums",
         element: <Forums />,
       },
 
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
       {
         path: "login",
         element: <LoginForm />,
-      }
+      },
      
 
       

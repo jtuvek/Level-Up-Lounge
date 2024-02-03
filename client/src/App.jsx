@@ -1,10 +1,11 @@
 import "./index.css";
 import "./components/layout/layout.css"
-import Navbar from "./components/navbar.jsx";
-import Footer from "./components/footer.jsx";
-import Header from "./components/header.jsx";
-import { Outlet } from "react-router-dom";
+import React, { useState } from 'react';
+import { Outlet } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
+import Navbar from './components/navbar.jsx';
+import Footer from './components/footer.jsx';
+import Header from './components/header.jsx';
 
 const client = new ApolloClient({
   uri: '/graphql',
@@ -12,14 +13,24 @@ const client = new ApolloClient({
 });
 
 const App = () => {
+  const [isLoginPage, setIsLoginPage] = useState(false);
+
+  // Function to handle login link click
+  const handleLoginLinkClick = () => {
+    setIsLoginPage(true);
+    console.log('isLoginPage set to true')
+  };
+
   return (
     <ApolloProvider client={client}>
-    <div>
-      <Navbar />
-      <Outlet />
-      <Footer />
-      <Header />
-    </div>
+      <div>
+        <Navbar onLoginLinkClick={handleLoginLinkClick} />
+        {/* Conditionally render Header based on isLoginPage if needed */}
+        {!isLoginPage && <Header />}
+        <Outlet />
+        {/* Conditionally render Footer based on isLoginPage */}
+        {isLoginPage && <Footer />}
+      </div>
     </ApolloProvider>
   );
 };
