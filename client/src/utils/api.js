@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-const SignupForm = () => {
+const registerUser = () => {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -21,8 +21,8 @@ const SignupForm = () => {
     e.preventDefault();
 
     try {
-      // Call the signupForm function from your API file
-      const response = await signupForm(formData);
+      // Call the registerUser function from your API file
+      const response = await registerUser(formData);
 
       // Handle the response or update the UI as needed
       console.log('Signup successful:', response);
@@ -70,4 +70,4 @@ const SignupForm = () => {
   );
 };
 
-export default SignupForm;
+export default registerUser;
