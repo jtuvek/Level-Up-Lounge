@@ -35,7 +35,7 @@ const LoginForm = () => {
   };
 
   return (
-    <di>
+    <div>
       <h1 className="login-heading">Login!</h1>
       <form className="loginContainer" onSubmit={handleSubmit}>
         <div>
@@ -72,7 +72,7 @@ const LoginForm = () => {
           Login
         </button>
       </form>
-    </di>
+    </div>
   );
 };
 
