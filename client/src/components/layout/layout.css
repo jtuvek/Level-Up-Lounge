@@ -9,10 +9,10 @@
     justify-content: space-between;
     align-items: center;
     background-color: #fff; /* Adjust as needed */
-    /* background-color: #a0adff; */
-    /* background-color: rgb(168, 168, 168); */
-    /* opacity: 0.9; */
+    /* background-color: rgb(168, 168, 168);
+    opacity: 0.9; */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    z-index: 1;
   }
   
   .header-links-container {
@@ -140,15 +140,16 @@
     flex-direction: column; 
     align-items: flex-start; 
     /* background-color: rgb(255, 255, 255); */
-    background-color: #fff;
+    background-color: #4065ca;
     width: 164px; 
     height: 52vh; 
     margin: 0;
     border-right: 2px solid #a2a2a2;
     border-top: 2px solid #e0e0e0;
     border-bottom: 2px solid #a2a2a2;
+    border-radius: 0px 18px 18px 0px;
     margin-top: 198px;
-    position: sticky;
+    position: fixed;
     top: 20px;
     left: 0px;
     z-index: 100;
@@ -168,13 +169,19 @@
     border-right: 2px solid #e0e0e0;
     border-top: 2px solid #e0e0e0;
     border-bottom: 2px solid #e0e0e0;
+    border-radius: 0px 18px 18px 0px;
     margin-top: 198px;
-    position: sticky;
+    position: fixed;
     top: 20px;
     left: 0px;
     z-index: 100;
     transition: width 0.3s ease;
   }
+
+.navbar.expanded .chevron-icon,
+.navbar.expanded .sidebar-links a {
+  color: white;
+}
 
   .chevron-icon {
     cursor: pointer;
@@ -196,6 +203,11 @@
     box-shadow: #ff3030 0px 0px 6px 6px;
     color: #c1003a;
   }
+
+
+.navbar.expanded .sidebar-links a:hover {
+  color: #fdfa34;
+}
 
   .sidebar-links {
     display: flex;
@@ -259,6 +271,8 @@
     /* margin-bottom: 650px; */
     /* position: fixed; */
     margin-top: auto;
+    position: relative;
+    bottom: 0;
 }
 
 .footer-links {

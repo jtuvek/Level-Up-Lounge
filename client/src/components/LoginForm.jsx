@@ -35,41 +35,44 @@ const LoginForm = () => {
   };
 
   return (
-    <form className="loginContainer" onSubmit={handleSubmit}>
-      <div>
-        <label className="email-header" htmlFor="email">
-          Email:
-        </label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-          className="email-input custom-input"
-        />
-      </div>
+    <di>
+      <h1 className="login-heading">Login!</h1>
+      <form className="loginContainer" onSubmit={handleSubmit}>
+        <div>
+          <label className="email-header" htmlFor="email">
+            Email:
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            className="email-input custom-input"
+          />
+        </div>
 
-      <div>
-        <label className="password-header" htmlFor="password">
-          Password:
-        </label>
-        <input
-          type="password"
-          id="password"
-          name="password"
-          value={formData.password}
-          onChange={handleChange}
-          required
-          className="password-input custom-input"
-        />
-      </div>
+        <div>
+          <label className="password-header" htmlFor="password">
+            Password:
+          </label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            value={formData.password}
+            onChange={handleChange}
+            required
+            className="password-input custom-input"
+          />
+        </div>
 
-      <button className="login-form-button" type="submit">
-        Login
-      </button>
-    </form>
+        <button className="login-form-button" type="submit">
+          Login
+        </button>
+      </form>
+    </di>
   );
 };
 
