@@ -26,7 +26,7 @@ h1 {
 
 /* Home */
 .home {
-  display: flex;
+  /* display: flex;
   flex-direction: column; 
   align-items: center; 
   position: relative; 
@@ -35,8 +35,22 @@ h1 {
   color: rgb(75, 75, 75);
   padding: 64px;
   max-width: 800px;
-  margin: 0 auto;
-  /* z-index: -2; */
+  margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  width: 100%;
+  padding: 64px;
+  color: white;
+
+  /* background-image */
+  background-image: url('./assets/MassEffectBackground.webp');  
+  background-size: cover;
+  background-repeat: no-repeat;                                  
+  background-position: center;
 }
 
 .join-btn {
